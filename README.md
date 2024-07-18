@@ -1,15 +1,13 @@
 # OPEMS
 Open Power and Energy Measurement Scrips
 
-This readme contains all information about this repo containing detailed explanations and examplary scripts to perform power and energy measurements on various devices-under-test (DUTs) on NVIDIA GPUs and Intel CPUs. 
+This readme contains all information about this repo containing detailed explanations and examplary scripts to perform power and energy measurements on NVIDIA GPUs and Intel CPUs. 
 
 Please read this document carefully to get a feeling of how to perform scientifically correct and valid measurements. 
 
 ## Overview
 
-In general, we measure the time/power/energy consumption of a certain **application (app)** on the **device-under-test (DUT)**, which could, e.g., be a smartphone, a TV, a PC, or a component of a device such as a CPU. The power/energy is measured by the **power meter (PM)**. Furthermore, we need a **workstation (WS)** to control and automize measurements. 
-
-Typical commands and short explanations to control typical DUTs are provided in the folder ```/DUTs```. 
+In general, we measure the time/power/energy consumption of a certain **application (app)** on the **device-under-test (DUT)**, which could, e.g., be a smartphone, a TV, a PC, or a component of a device such as a CPU. The power/energy is measured by the **power meter (PM)**. Furthermore, we need a **control unit (CU)** to control and automize measurements. 
 
 Scripts for measuring power/energy on different PMs are listed in the folder ```/PMs```. 
 
@@ -94,46 +92,21 @@ For all your measurement, it is good to follow some good-scientific-practice rul
 - Make sure that your measurements can be reproduced. 
 - Before mean power or energy measurements, perform a power measurement of the process and check the power-time curve for plausibility. It is also a good idea to record such a power-time curve for the report/thesis. 
 - Check all results for plausibility. 
-- Check measurement cases which do not satisfy the statistical validity test. Try to find out why it is not statistically valid. 
-- Define tha system setup in detail ((state of) Internet connections, screen brightnesses, runlevel, state of background processes, OS version, ...) and find ways to set these automatically before the measurement, if possible. 
+- Crosscheck measurements which do not satisfy the statistical validity test. Try to find out why it is not statistically valid. 
+- Define the system setup in detail ((state of) Internet connections, screen brightnesses, runlevel, state of background processes, OS version, ...) and find ways to set these automatically before the measurement, if possible. 
 
 
 
 ## Power Meters
 
-At the chair, we currently have the following power meters available. Scripts and commands to use them can be found in the subfolders. 
-- **LMG95**: For evaluation boards and devices with 230V power supply
-- **LMG611**: For evaluation boards and devices with 230V power supply
-- **High-Voltage Power Monitor (HVPM)**: For Android smartphones and evaluation boards (up to 15V power supply). WS must be Windows. 
+Currently, scripts for the following power meters are available: 
 - **Running-Average Power Limit (RAPL)**: Internal power meter of Intel CPUs (measures the energy for CPU, unCPU, and package). Only runs on Linux PCs. 
 - **NVIDIA SMI**: Internal power meter for NVIDIA GPUs. Only runs on Linux PCs. 
 
-
-## DUTs
-
-Up to now, we have experience in measuring energy/power of the following DUTs (could be incomplete): 
-- Android smartphones (prepared to measure via battery connectors);
-- Evaluation boards with Linux / Android (e.g., RasbperryPi, NXP, Pandaboard), measured through the main power supply or using probes for SoC or RAM;
-- PCs (Linux PCs, mainly with RAPL);
-- NVIDIA GPUs (NVIDIA SMI);
-- Monitors (main power supply);
-- Laptops (main power supply);
-- FPGAs (main power supply)
-
-## Apps
-
-This is an incomplete list of apps that we tested. 
-- Software and hardware video decoders (Matthias, Christian)
-- Video encoders (Geetha, Lena)
-- Media players, online and offline (e.g., VLC) (Christian)
-- Camera apps (Students)
-- Virtual reality playback apps (Christian)
+More is to come. 
 
 ## Acknowledgment
 Thanks to Matthias Kränzler, Geetha Ramasubbu, and Lena Eichermüller for providing scripts and feedback. 
-
-## License
-Just used internally at LMS. So no license definec (yet). 
 
 ## References
 
