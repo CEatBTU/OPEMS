@@ -4,7 +4,8 @@
 % Chair of Multimedia Communications and Signal Processing %
 % Cauerstr. 7, 91058 Erlangen, Germany                     %
 % Matthias Kraenzler   (matthias.kraenzler@fau.de)         %
-% 09-2022                                                  %
+% Christian Herglotz   (Christian.herglotz@b-tu.de)        %
+% 08-2024                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [energyLoad,energyIdle,appTime] = measureAppEnergyWithRapl(appCommand,maxEnergyRange,analysis,numberOfReps)
 % Read RAPL counter 'cat /sys/class/powercap/intel-rapl/intel-rapl\:0/energy_uj';

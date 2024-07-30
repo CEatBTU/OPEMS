@@ -1,11 +1,11 @@
 %% Main Function
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Friedrich-Alexander-Universität Erlangen-Nürnberg      %
+% Friedrich-Alexander-Universität Erlangen-Nürnberg        %
 % Chair of Multimedia Communications and Signal Processing %
 % Cauerstr. 7, 91058 Erlangen, Germany                     %
 % Matthias Kraenzler   (matthias.kraenzler@fau.de)         %
 % Christian Herglotz   (Christian.herglotz@b-tu.de)        %
-% 09-2022                                                  %
+% 08-2024                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Input Variables
 % Please change settings in inputConfiguration()

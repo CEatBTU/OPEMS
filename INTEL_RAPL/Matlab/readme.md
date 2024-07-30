@@ -1,9 +1,9 @@
 # Matlab Scripts for measuring the execution energy of an application
 
 Main script: 
-    ```Main_Measurement_Script.m```
+    ```main_energy.m```
 
-Runs on all Linux PCs with Intel Processors (iX and Xeon). 
+Runs on all Linux PCs with Intel Processors (iX and Xeon), tested with generations 5+. 
 
 Based on Intel <a href="https://dl.acm.org/doi/abs/10.1145/2425248.2425252">RAPL</a>. 
 
@@ -12,16 +12,13 @@ Based on Intel <a href="https://dl.acm.org/doi/abs/10.1145/2425248.2425252">RAPL
 
 Run the main script in Matlab. 
 
-The measurement can be configured using the file ```inputConfiguration.m```. Change the app executable to your executable and choose a set of input data. 
+The measurement can be configured using the file ```inputConfiguration.m```. Change the app executable to your executable with corresponding command-line flags. Using the variable 'instanceName', you can give the process a unique identifier for later analysis. 
 
 Attention: Make sure that you have the rights to execute the application binary. 
 
 
 # Example
 
-This code includes a readily executable example (```app_TAppDecoderStatic```) in the ```example/``` folder. The example is based on an <a href="https://gitlab.lms.tf.fau.de/LMS/HM-XX_analyzer">HEVC bit stream analyzer</a> and produces bit stream statistics for the example video ```data_sedona.bin```. 
+This code measures the energy consumption of a 5-s-execution of the ```top```command. Ensure that there are no active jobs running in the background, including jobs from other active users. Othwerwise, the result will be distorted. 
 
-When running the main script, the following output is produced: 
-- File ```featNum.m```: Contains statistics from the decoder analyzer (only useful to check correct functionality)
-- File ```example/Energy_*.mat```: Contains summarized information from the test series with all measured energies. The wildcard '*' is replaced by the measured application. 
-- File ```example/measurement_*.mat```: Contains detailed information on the energy consumption measurement for file '*' from the dataset. 
+When running the main script, a file is created ```measurement/measurement_instanceName.mat```, which contains detailed information on the energy consumption measurement for the process named 'instanceName'. 

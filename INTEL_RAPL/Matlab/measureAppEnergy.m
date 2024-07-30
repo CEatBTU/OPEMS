@@ -4,7 +4,8 @@
 % Chair of Multimedia Communications and Signal Processing %
 % Cauerstr. 7, 91058 Erlangen, Germany                     %
 % Matthias Kraenzler   (matthias.kraenzler@fau.de)         %
-% 09-2022                                                  %
+% Christian Herglotz   (Christian.herglotz@b-tu.de)        %
+% 08-2024                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% This script works on Linux systems equipped with Intel CPUs (iX, Xeon)
