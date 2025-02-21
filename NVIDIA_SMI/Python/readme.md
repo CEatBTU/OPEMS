@@ -8,7 +8,7 @@ I create requirement.txt file.
 I recommend to build a venv and install the packages on it. then run in the machine.
 
 # Use
-for running the code you can easily write 
+For running the code you can easily write 
 python energy_gpu_modified.py
 I have put a simple script which its name is test.py that do a matrix multiplication in this program.
 if you want to use it for your appealing python code or task you can open energy_gpu_modified then at the end of code under main
