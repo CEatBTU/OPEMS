@@ -63,4 +63,4 @@ conda remove --name energy --all
 
 This code measures the energy consumption of a 5-s-execution of the ```top```command. Ensure that there are no active jobs running in the background, including jobs from other active users. Othwerwise, the result will be distorted. 
 
-When running the main script, a file is created ```measurement/measurement_instance_name.txt```, which contains detailed information on the energy consumption measurement for the process named by the variable 'instanceName'. 
+When running the main script, a file is created ```measurement/instance_name.txt```, which contains detailed information on the energy consumption measurement for the process named by the variable 'instanceName'. 
