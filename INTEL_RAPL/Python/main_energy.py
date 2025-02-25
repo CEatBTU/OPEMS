@@ -30,7 +30,7 @@ def input_configuration():
     cfg['rapl']['minimum_measurement_time'] = 2.5  # Minimum time in seconds to improve measurement quality
     cfg['rapl']['initialization_measurement'] = 1
     cfg['rapl']['normalization_factor'] = 1e6  # RAPL measures energy in uJ
-    cfg['rapl']['measurement_file_ending'] = 'mat'
+    cfg['rapl']['measurement_file_ending'] = 'txt'
 
     return cfg
 
