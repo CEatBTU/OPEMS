@@ -3,6 +3,18 @@
 Main script:energy_gpu_modified.py
 
 Runs on all PCs with NVIDIA SMI version 565.57.01 and CUDA 12.7. 
+# NVIDIA SMI Installation
+
+Follow the steps below to install NVIDIA SMI on your machine:
+
+## Step 1: Install NVIDIA Drivers
+
+1. **Update your package list** (for Ubuntu/Debian-based systems):
+   ```bash
+   sudo apt update
+2. **Install the latest NVIDIA drivers:**
+ ```bash
+   sudo apt install nvidia-driver
 
 I create requirement.txt file.
 I recommend to build a venv and install the packages on it. then run in the machine.
