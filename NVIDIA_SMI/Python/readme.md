@@ -14,7 +14,7 @@ Follow the steps below to install NVIDIA SMI on your machine:
    sudo apt update
    sudo apt install nvidia-driver
    sudo apt install nvidia-driver
-   Check it install completely
+   #Check it install completely
    sudo reboot
 
 I create requirement.txt file.
