@@ -5,6 +5,9 @@ This readme contains all information about this repo containing detailed explana
 
 Please read this document carefully to get a feeling of how to perform scientifically correct and valid measurements. 
 
+Caution: The scripts provided in this repo are very helpful when targeting to measure **relative** power and energy consumptions (e.g., energy and power savings obtained by certain optimizations). The reason is that we make use of internal power measurement circuitry available in CPUs and GPUs, which have been shown to provide inaccurate power readings [1]. Reliable and correct **absolute** power and energy consumption values should be measured using professional power measurement equipment, e.g., calibrated power meters. 
+
+
 ## Overview
 
 In general, we measure the time/power/energy consumption of a certain **application (app)** on the **device-under-test (DUT)**, which could, e.g., be a smartphone, a TV, a PC, or a component of a device such as a CPU. The power/energy is measured by the **power meter (PM)**. Furthermore, we need a **control unit (CU)** to control and automize measurements. 
