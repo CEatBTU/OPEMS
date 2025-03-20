@@ -106,7 +106,7 @@ Currently, scripts for the following power meters are available:
 More is to come. 
 
 ## Acknowledgment
-Thanks to Matthias Kränzler, Geetha Ramasubbu, and Lena Eichermüller for providing scripts and feedback. 
+Thanks to Geetha Ramasubbu, Lena Eichermüller, Xinyi Wang, Matthias Kränzler, and Alireza Siavashi for providing scripts and feedback. 
 
 ## References
 
