@@ -9,7 +9,7 @@ Please read this document carefully to get a feeling of how to perform scientifi
 
 In general, we measure the time/power/energy consumption of a certain **application (app)** on the **device-under-test (DUT)**, which could, e.g., be a smartphone, a TV, a PC, or a component of a device such as a CPU. The power/energy is measured by the **power meter (PM)**. Furthermore, we need a **control unit (CU)** to control and automize measurements. 
 
-Scripts for measuring Intel CPUs with RAPL [2] are listed in ```IUNTEL_RAPL/```. Scripts for measuring the power on NVIDIA GPUs are provided in ```NVIDIA_SMI```. 
+Scripts for measuring Intel CPUs with RAPL [2] are listed in ```INTEL_RAPL/```. Scripts for measuring the power on NVIDIA GPUs are provided in ```NVIDIA_SMI```. 
 
 ## Processing times
 
@@ -105,5 +105,7 @@ Thanks to Geetha Ramasubbu, Lena Eichermüller, Xinyi Wang, Matthias Kränzler, 
 ## References
 
 [1] Herglotz, C., Katsenou, A., Wang, X., Kränzler, M., & Schien, D. (2025). Foundations of Measuring Power and Energy Consumption in Video Communication. IEEE Access.
+
 [2] https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/advisory-guidance/running-average-power-limit-energy-reporting.html (last accessed 2025-03-20)
+
 [3] https://developer.nvidia.com/system-management-interface (last accessed 2025-03-20)
